@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="./style.css">
+	<title>Contact | Business Company</title>
+</head>
+<body>
+	<header class="site-header">
+		<a class="logo" href="./index.html" aria-label="Business Company">BC</a>
+		<nav class="navbar" id="site-navigation" aria-label="Main navigation">
+			<a href="./index.html">Home</a>
+			<a href="./service.html">Services</a>
+			<a href="./about.html">About</a>
+			<a class="active" href="./contact.html">Contact</a>
+		</nav>
+	</header>
+
+	<main>
+		<section class="hero contact-hero">
+			<p class="eyebrow">Get in touch</p>
+			<h1>Let’s work together.</h1>
+			<p>Tell us about your business and how we can help you move forward.</p>
+		</section>
+
+		<section class="contact-section">
+			<form class="contact-form" action="#" method="post">
+				<label for="name">Full name</label>
+				<input id="name" name="name" type="text" placeholder="Your name" required>
+
+				<label for="email">Email address</label>
+				<input id="email" name="email" type="email" placeholder="you@example.com" required>
+
+				<label for="service">Service needed</label>
+				<select id="service" name="service">
+					<option value="">Choose a service</option>
+					<option value="strategy">Business strategy</option>
+					<option value="digital">Digital solutions</option>
+					<option value="growth">Customer growth</option>
+				</select>
+
+				<label for="message">Message</label>
+				<textarea id="message" name="message" rows="5" placeholder="Tell us about your project" required></textarea>
+
+				<button class="button" type="submit">Send message</button>
+			</form>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<p>&copy; 2026 Business Company. All rights reserved.</p>
+	</footer>
+</body>
+</html>
