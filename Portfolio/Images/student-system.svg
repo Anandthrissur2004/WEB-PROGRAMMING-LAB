@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 400" role="img" aria-labelledby="title desc">
+  <title id="title">Student attendance dashboard</title>
+  <desc id="desc">A friendly illustration of a student profile and face recognition scan.</desc>
+  <rect width="720" height="400" fill="#dce8dc"/>
+  <circle cx="620" cy="55" r="95" fill="#c7d8c7"/>
+  <rect x="66" y="58" width="440" height="284" rx="20" fill="#fffdf8"/>
+  <rect x="66" y="58" width="440" height="48" rx="20" fill="#17221f"/>
+  <path d="M66 86h440v20H66z" fill="#17221f"/>
+  <circle cx="93" cy="82" r="6" fill="#e56848"/>
+  <circle cx="113" cy="82" r="6" fill="#dce8dc"/>
+  <rect x="92" y="132" width="170" height="178" rx="13" fill="#f5f3ed"/>
+  <circle cx="177" cy="196" r="43" fill="#e8bfa8"/>
+  <path d="M135 189c3-34 72-47 83 1-20-9-32-20-38-30-8 17-24 25-45 29" fill="#17221f"/>
+  <path d="M118 294c4-47 31-68 59-68s55 21 59 68" fill="#e56848"/>
+  <rect x="282" y="140" width="193" height="19" rx="9" fill="#dce8dc"/>
+  <rect x="282" y="174" width="147" height="11" rx="5" fill="#d9ded7"/>
+  <rect x="282" y="209" width="193" height="72" rx="12" fill="#f5f3ed"/>
+  <circle cx="313" cy="245" r="17" fill="#c7d8c7"/>
+  <path d="M305 245l6 6 11-13" fill="none" stroke="#17221f" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"/>
+  <rect x="341" y="232" width="107" height="10" rx="5" fill="#17221f"/>
+  <rect x="341" y="250" width="77" height="8" rx="4" fill="#9aa8a0"/>
+  <rect x="530" y="181" width="126" height="126" rx="63" fill="#e56848"/>
+  <path d="M561 243c0-22 14-38 32-38s32 16 32 38-14 38-32 38-32-16-32-38z" fill="none" stroke="#fffdf8" stroke-width="5"/>
+  <path d="M549 222v-14h15m63 0h14v14m0 42v14h-14m-63 0h-15v-14" fill="none" stroke="#fffdf8" stroke-linecap="round" stroke-width="5"/>
+  <path d="M560 243h66" stroke="#fffdf8" stroke-width="3" opacity=".8"/>
+</svg>
