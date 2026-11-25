@@ -1,0 +1,48 @@
+<!--index.html-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Image Gallery</h1>
+
+    <!-- Gallery thumbnails -->
+    <div class="gallery">
+        <button class="thumbnail" type="button" data-index="0" aria-label="Open image 1">
+            <img src="./Image/image1.png" alt="">
+        </button>
+        <button class="thumbnail" type="button" data-index="1" aria-label="Open image 2">
+            <img src="./Image/image2.png" alt="">
+        </button>
+        <button class="thumbnail" type="button" data-index="2" aria-label="Open image 3">
+            <img src="./Image/image3.png" alt="">
+        </button>
+        <button class="thumbnail" type="button" data-index="3" aria-label="Open image 4">
+            <img src="./Image/image4.png" alt="">
+        </button>
+    </div>
+
+    <!-- Image viewer and navigation controls -->
+    <div id="viewer">
+        <div class="slide-frame">
+            <img id="slide" src="" alt="Selected gallery image">
+        </div>
+        <div class="viewer-controls">
+            <button type="button" data-action="previous">Previous</button>
+            <button type="button" data-action="zoom-out" aria-label="Zoom out">−</button>
+            <span id="zoom-level" aria-live="polite">100%</span>
+            <button type="button" data-action="zoom-in" aria-label="Zoom in">+</button>
+            <button type="button" data-action="zoom-reset">Reset zoom</button>
+            <button type="button" data-action="next">Next</button>
+            <button type="button" data-action="autoplay">Auto-play</button>
+            <button type="button" data-action="close">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

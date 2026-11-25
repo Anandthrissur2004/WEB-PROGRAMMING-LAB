@@ -1,0 +1,106 @@
+
+/* Set the page's typography, alignment, and color theme. */
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #3e316e;
+    color: white;
+
+}
+
+/* Arrange gallery thumbnails in a centered grid. */
+/* Arrange gallery thumbnails in a centered two-column grid. */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 200px);
+    gap: 15px;
+    justify-content: center;
+}
+
+/* Remove default button styling from each thumbnail. */
+.thumbnail {
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;;
+}
+
+/* Keep thumbnails consistently sized and crop images to fill them. */
+.thumbnail img {
+    width: 200px;
+    height:200px;
+    object-fit: cover;
+    transition: 0.3s;
+}
+
+/* Highlight a thumbnail when the pointer hovers over it. */
+.thumbnail:hover img {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px gray;
+}
+
+/* Hide the image viewer until a thumbnail is selected. */
+#viewer {
+    display: none;
+    margin: 50px;
+    color: black;
+    flex-direction: column;
+    gap: 12px;
+}
+
+/* Show the viewer when it is open. */
+#viewer.is-open {
+    display: flex;
+}
+
+/* Constrain the displayed image and clip zoomed content. */
+.slide-frame {
+    width: min(100%, 600px);
+    height: min(60vh, 400px);
+    margin: 0 auto;
+    overflow: hidden;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+/* Center viewer controls and allow them to wrap on narrow screens. */
+.viewer-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+/* Fit the selected image inside the viewer frame. */
+#slide {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform-origin: center;
+    transition: transform 180ms ease;
+}
+
+/* Make viewer buttons easier to use. */
+#viewer button {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+/* Indicate when a viewer button is unavailable. */
+#viewer button:disabled {
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+/* Adjust viewer spacing and height for small screens. */
+@media (max-width: 520px) {
+    #viewer {
+        margin: 32px 12px;
+        gap: 8px;
+    }
+
+    .slide-frame {
+        height: 50vh;
+    }
+}
